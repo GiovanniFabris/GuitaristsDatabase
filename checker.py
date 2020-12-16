@@ -1,20 +1,18 @@
 """
 This module focuses on checking if the input
-given by the user corresponds to one of the 
+given by the user corresponds to one of the
 instances present in the csv file
-that contains the names of the guitarists and 
+that contains the names of the guitarists and
 bands.
 """
-
 import pandas as pd
 
 
 class Check:
 
-
     def check_guitarist(self, guitar_player):
         """
-        This function controls if the input given 
+        This function controls if the input given
         by the user is present in the guitarists players
         column inside the guitarists csv file.
         """
@@ -24,11 +22,10 @@ class Check:
         if guitar_player in players.values:
             return True
         return False
-                   
-                                  
+
     def check_band(self, band_name):
         """
-        This function controls if the input given 
+        This function controls if the input given
         by the user is present in the band
         column inside the guitarists csv file.
         """

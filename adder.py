@@ -1,22 +1,21 @@
 """
 The adder module has a single
-function with the purpose 
+function with the purpose
 of appending inside the dataset
 the names of the bands/guitarists
 he/she inputs.
 
-The input will be checked to 
-see if it is already inside the 
+The input will be checked to
+see if it is already inside the
 database.
 
-The user will be able to choose 
-whether the name he put as input 
+The user will be able to choose
+whether the name he put as input
 is of a guitarist or band, and then
 input later on the second name.
 
-It is necessary for the user to 
+It is necessary for the user to
 input a string that is not empty.
-
 """
 
 import csv
@@ -28,17 +27,19 @@ def add_element(g_or_b, response=""):
 
     """
     This function comes into play once the user inputs a value
-    that is not to be found inside the database, or when, after 
+    that is not to be found inside the database, or when, after
     the input, the user writes the optional argument -a.
-    It asks if the input is a name of a band or a guitarist, 
-    then it asks for the missing name, and proceeds to add both 
+    It asks if the input is a name of a band or a guitarist,
+    then it asks for the missing name, and proceeds to add both
     values under the right columns in our database.
     """
     db = pd.DataFrame(pd.read_csv('players_bands.csv'))
     if Check().check_band(g_or_b):
-        return print("sorry, but " + g_or_b + " is already present in the database, thank you anyway")
+        return print("sorry, but " + g_or_b + " is already present " +
+                     "in the database, thank you anyway")
     elif Check().check_guitarist(g_or_b):
-        return print("sorry, but " + g_or_b + " is already present in the database, thank you anyway")
+        return print("sorry, but " + g_or_b + " is already " +
+                     "present in the database, thank you anyway")
     else:
         if response == "g":
             name1 = "g"
@@ -52,7 +53,8 @@ def add_element(g_or_b, response=""):
             if response == "":
                 name2 = input("Now enter the name of the guitarist -> ")
                 while(name2 == ""):
-                    name2 = input("You can't enter nothing... so please... put anything -> ")
+                    name2 = input("You can't enter nothing... " +
+                                  "so please... put anything -> ")
             with open('players_bands.csv', 'a') as newFile:
                 newFileWriter = csv.writer(newFile)
                 row = len(db)
@@ -62,7 +64,8 @@ def add_element(g_or_b, response=""):
             if response == "":
                 name2 = input("Now enter the name of the band -> ")
                 while(name2 == ""):
-                    name2 = input("You can't enter nothing... so please... put anything -> ")
+                    name2 = input("You can't enter nothing..." +
+                                  "so please... put anything -> ")
             with open('players_bands.csv', 'a') as newFile:
                 newFileWriter = csv.writer(newFile)
                 row = len(db)
