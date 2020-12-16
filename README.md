@@ -1,5 +1,5 @@
 ## Implementation of a Database of Guitar Heroes
-------------------------------------------------------
+
 This is the README file for the Pillotada Project of Software project development
 
 Let's go! 
@@ -23,7 +23,9 @@ The functions `check_guitarist`, `check_band`and `adder` are all stored in their
 The Argparse calls them from the `main.py` module.
 
 If wanting the execute the program, the command should be written as follows:
-`python main.py "name"`
+```bash
+python main.py "name"
+```
 Whereas "name" should be either the name of a band or the name of a guitarist. 
 For example:
 `python main.py "Led Zeppelin"`
