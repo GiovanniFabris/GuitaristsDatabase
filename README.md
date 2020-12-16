@@ -1,23 +1,24 @@
-## Implementation of a Database of Guitar Heroes
+# Implementation of a Database of Guitar Heroes
 
 This is the README file for the Pillotada Project of Software project development
 
 Let's go! 
 
+## Installation
+
+Use the command `git clone https://github.com/GiovanniFabris/GuitaristsDatabase/tree/main` in the command prompt
+of your PC in order to automatically download the whole folder containing the modules.
+Git should have been previously installed on the machine.
+In alternative, just download manually the package from Github.
+
+## Usage
+
 The aim of the project is to create a database containing all of the most famous guitarists associated with their respective bands.  
 Once the name of a guitarist (e.g. Brian May) has been entered as input, the program controls if the name of the guitarist or of the band is already present in the dataset. 
-if it is not, the program will kindly ask you if you wanna add the couple (guitarist + band).
+If it is not, the program will kindly ask you if you want to add the couple (guitarist + band).
 
-On the other hand, if the name is already present (input ex. "Brian May"), the "get_band" function will return the name of the character's respective band. (Queen in this case).
-Of course, it also works the other way around. (entering the band name, it will return the guitarist's name of that band) 
-
-To increase the speed of interaction, the user can access the shortcut -a.
-This command allows you to skip a step and add a new component or band name directly to the database by simply writing the -a keyword next to the new name to add.
-
-ex. --> John -a .
-
-The program will then ask the user to specify whether the name entered concerns a band or the guitarist. 
-When you reach this point, to add a guitarist the input command is -g, for a band -b.
+On the other hand, if the name is already present (input ex. `"Brian May"`), the `get_band` function will return the name of the artist's respective band. (Queen in this case).
+Of course, it also works the other way around(entering the band name, it will return the guitarist's name of that band). 
 
 The functions `check_guitarist`, `check_band`and `adder` are all stored in their respective modules.
 The Argparse calls them from the `main.py` module.
@@ -43,5 +44,13 @@ Jimmy Page is the guitar hero of Led Zeppelin
 
 To do so, we preferred storing the guitarists' and band's names into a csv file in order to keep it neat and tidy. 
 
+To increase the speed of interaction, the user can access the shortcut -a thanks to `argparse`.
+This command allows you to skip a step and add a new component or band name directly to the database by simply writing the -a keyword next to the new name to add.
+
+```bash
+python main.py John Wick -a
+```
+The program will then ask the user to specify whether the name entered concerns a band or the guitarist. 
+When you reach this point, to add a guitarist the input command is -g, for a band -b.
 
 
