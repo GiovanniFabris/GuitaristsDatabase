@@ -1,17 +1,22 @@
 import csv
 from list_of_guitarists import list_of_guitarists
+import pandas as pd
 
-def database(dictionary):
+def database(dictionary, name_csv="players_bands.csv"):
+
     """
     the following function takes the elements present
     in the dictionary and places them into a csv file
     named guitarists.csv that we will use as our database.
     We will be able to add new bands and guitarists then.
     """
-    a_file = open("guitarists.csv","w")
-    writer = csv.writer(a_file)
+
+    g_b = []
     for key, value in dictionary.items():
-        writer.writerow([key,value])
-    a_file.close()
+        g_b.append([key,value])
+    df = pd.DataFrame(g_b, columns=["Players","Bands"])
+    df.to_csv(name_csv)
+    return print("database created successfully ")
+    
 
 database(list_of_guitarists)
