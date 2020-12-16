@@ -1,7 +1,8 @@
 ## Implementation of a Database of Guitar Heroes
-#This is the README file for the Pillotada Project of Software project development
+------------------------------------------------------
+This is the README file for the Pillotada Project of Software project development
 
-let's go! 
+Let's go! 
 
 The aim of the project is to create a database containing all of the most famous guitarists associated with their respective bands.  
 Once the name of a guitarist (e.g. Brian May) has been entered as input, the program controls if the name of the guitarist or of the band is already present in the dataset. 
