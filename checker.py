@@ -6,7 +6,6 @@ that contains the names of the guitarists and
 bands.
 """
 
-import csv
 import pandas as pd
 
 
@@ -19,8 +18,10 @@ class Check:
         by the user is present in the guitarists players
         column inside the guitarists csv file.
         """
+        guitar_player = guitar_player.lower()
         db = pd.DataFrame(pd.read_csv('players_bands.csv'))
-        if guitar_player in db["Players"].values:
+        players = db["Players"].str.lower()
+        if guitar_player in players.values:
             return True
         return False
                    
@@ -31,7 +32,9 @@ class Check:
         by the user is present in the band
         column inside the guitarists csv file.
         """
+        band_name = band_name.lower()
         db = pd.DataFrame(pd.read_csv('players_bands.csv'))
-        if band_name in db["bands"].values:
+        bands = db["Bands"].str.lower()
+        if band_name in bands.values:
             return True
         return False
