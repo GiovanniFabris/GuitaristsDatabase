@@ -1,3 +1,9 @@
+"""
+this module contains a function
+that focuses on creating
+a csv file from the dictionary given at
+the beginning of the project
+"""
 import csv
 from list_of_guitarists import list_of_guitarists
 import pandas as pd
