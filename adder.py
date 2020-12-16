@@ -1,17 +1,24 @@
 """
-In this module there is 
-a function that lets the user
-input a name of a guitarist or 
-a band and then add it to the database
-if it is not already part of it.
+The adder module has a single
+function with the purpose 
+of appending inside the dataset
+the names of the bands/guitarists
+he/she inputs.
 
-The system will require the user to put
-any string input, but he/she is not allowed to 
-put an empty string.
+The input will be checked to 
+see if it is already inside the 
+database.
 
-The function also has a default parameter useful
-in the testing process of the adder.
+The user will be able to choose 
+whether the name he put as input 
+is of a guitarist or band, and then
+input later on the second name.
+
+It is necessary for the user to 
+input a string that is not empty.
+
 """
+
 import csv
 import pandas as pd
 from checker import Check
