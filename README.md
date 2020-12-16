@@ -28,11 +28,18 @@ python main.py "name"
 ```
 Whereas "name" should be either the name of a band or the name of a guitarist. 
 For example:
-`python main.py "Led Zeppelin"`
+```bash
+python main.py "Led Zeppelin"
+```
 In this case, since the band is in the archive, the output will be:
-`The guitar hero of Led Zeppelin is Jimmy Page`
+```bash
+The guitar hero of Led Zeppelin is Jimmy Page
+```
+
 Otherwise, if we input the name of the guitarist of this band:
-`Jimmy Page is the guitar hero of Led Zeppelin`
+```bash
+Jimmy Page is the guitar hero of Led Zeppelin
+```
 
 To do so, we preferred storing the guitarists' and band's names into a csv file in order to keep it neat and tidy. 
 
