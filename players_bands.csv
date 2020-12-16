@@ -1,17 +1,13 @@
-,bands,Players
-0,Cream,Eric Clapton
-1,Led Zeppelin,Jimmy Page
-2,Rolling Stones,Keith Richards
-3,Van Halen,Eddie Van Halen
-4,Pink Floyd,David Gilmour
-5,AD/DC,Angus Young
-6,Queen,Brian May
-7,Ramones,Johnny Ramone
-8,Rage Against the Machine,Tom Morello
-9,Guns'n Roses,Slash
-10,Slipknot,Jim Root
-11,Metallica,Kirk Hammet
-12,Eagles,Glenn Frey13,Red Hot Chili Peppers,John Frusciante
-14,Arctic Monkeys,Alex Turner15,Jonas Brothers,Kevin Jonas16,gigini,gigio
-17,giovannino,giovannini
-18,michele,michelini
+,Players,Bands
+0,Eric Clapton,Cream
+1,Jimmy Page,Led Zeppelin
+2,Keith Richards,Rolling Stones
+3,Eddie Van Halen,Van Halen
+4,David Gilmour,Pink Floyd
+5,Angus Young,AD/DC
+6,Brian May,Queen
+7,Johnny Ramone,Ramones
+8,Tom Morello,Rage Against the Machine
+9,Slash,Guns'n Roses
+10,Jim Root,Slipknot
+11,Kirk Hammet,Metallica
