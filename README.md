@@ -1,8 +1,8 @@
 # Implementation of a Database of Guitar Heroes
 
-This is the README file for the Pillotada Project of Software project development
-
-Let's go! 
+GuitaristsDatabase is a projects that takes users' inputs from the a machine terminal, checks whether or not 
+they are Guitarists or Bands inside of an internal csv database and, if needed, it can let the user add them directly 
+inside the database.
 
 ## Installation
 
