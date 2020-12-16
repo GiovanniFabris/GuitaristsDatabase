@@ -25,6 +25,15 @@ from checker import Check
 
 
 def add_element(g_or_b, response=""):
+
+    """
+    This function comes into play once the user inputs a value
+    that is not to be found inside the database, or when, after 
+    the input, the user writes the optional argument -a.
+    It asks if the input is a name of a band or a guitarist, 
+    then it asks for the missing name, and proceeds to add both 
+    values under the right columns in our database.
+    """
     db = pd.DataFrame(pd.read_csv('players_bands.csv'))
     if Check().check_band(g_or_b):
         return print("sorry, but " + g_or_b + " is already present in the database, thank you anyway")
